@@ -6,9 +6,11 @@
 /*   By: neves <neves@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 23:39:17 by neves             #+#    #+#             */
-/*   Updated: 2025/11/16 23:52:36 by neves            ###   ########.fr       */
+/*   Updated: 2025/11/17 23:12:40 by neves            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 int ft_print_hex(unsigned int n, char type)
 {

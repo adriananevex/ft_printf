@@ -6,14 +6,14 @@
 #    By: neves <neves@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/16 22:27:36 by neves             #+#    #+#              #
-#    Updated: 2025/11/16 22:34:55 by neves            ###   ########.fr        #
+#    Updated: 2025/11/17 23:29:07 by neves            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = LIBFTPRINTF.all
+NAME = libftprintf.a
 
 CC = cc
-CFLAGS = -Wall - Wextra - Werror
+CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 
 SRC = ft_printf.c ft_print_char.c ft_print_hex.c ft_print_number.c \

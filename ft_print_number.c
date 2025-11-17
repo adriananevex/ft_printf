@@ -6,28 +6,28 @@
 /*   By: neves <neves@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 23:53:09 by neves             #+#    #+#             */
-/*   Updated: 2025/11/16 23:54:53 by neves            ###   ########.fr       */
+/*   Updated: 2025/11/17 23:29:41 by neves            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_printf.h"
+
 int ft_print_number(int n)
 {
-	char	num;
+	int	count;
 	long	ln;
 
+	count = 0;
 	ln = n;
-	if (fd < 0)
-		return ;
 	if (ln < 0)
 	{
-		ft_putchar_fd('-', fd);
+		count += ft_print_char('-');
 		ln = -ln;
 	}
 	if (ln >= 10)
 	{
-		ft_putnbr_fd((ln / 10), fd);
+		count += ft_print_number(ln / 10);
 	}
-	num = (ln % 10) + '0';
-	ft_putchar_fd(num, fd);
+	count += (ln % 10) + '0';
+	return (count);
 }
-

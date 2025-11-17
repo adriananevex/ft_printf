@@ -6,9 +6,11 @@
 /*   By: neves <neves@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 23:12:57 by neves             #+#    #+#             */
-/*   Updated: 2025/11/16 23:30:58 by neves            ###   ########.fr       */
+/*   Updated: 2025/11/17 23:30:59 by neves            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 int ft_type(char c, va_list args)
 {
